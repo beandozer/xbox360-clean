@@ -1,0 +1,95 @@
+/* Fully working schematic overlay for GamepadViewer v2 (Xbox 360 skin) */
+
+/* Controller plate */
+.xbox360.controller {
+  background: #1a1a1a;             /* dark gray */
+  border: 5px solid #8a2be2;       /* purple outline */
+  border-radius: 28px;
+  width: 820px;
+  height: 540px;
+  margin: 0 auto;
+  box-shadow: 0 0 32px rgba(138,43,226,0.5);
+}
+
+/* Face buttons */
+.xbox360.controller .button {
+  border-radius: 50%;
+  border: 2px solid #8a2be2;
+  transition: transform 120ms, box-shadow 120ms;
+}
+.xbox360.controller .button.a { background: #22c45b; }
+.xbox360.controller .button.b { background: #d5402b; }
+.xbox360.controller .button.x { background: #1e8fe0; }
+.xbox360.controller .button.y { background: #e6b215; }
+.xbox360.controller .button.pressed {
+  transform: translateY(3px) scale(0.95);
+  box-shadow: 0 0 16px #8a2be2;
+}
+
+/* D-Pad */
+.xbox360.controller .dpad .face {
+  background: #2a2a2a;
+  border: 2px solid #8a2be2;
+  border-radius: 6px;
+  transition: transform 120ms, background 120ms;
+}
+.xbox360.controller .dpad .face.pressed {
+  background: #8a2be2;
+}
+
+/* Sticks */
+.xbox360.controller .stick {
+  background: #2a2a2a;
+  border: 3px solid #8a2be2;
+  border-radius: 50%;
+  box-shadow: inset 0 0 8px rgba(138,43,226,0.4);
+  transition: transform 220ms;
+}
+.xbox360.controller .stick .puck {
+  background: #1a1a1a;
+  border: 2px solid #8a2be2;
+  border-radius: 50%;
+}
+.xbox360.controller .stick.pressed {
+  transform: translateY(4px) scale(0.97);
+  box-shadow: 0 0 18px #8a2be2;
+}
+
+/* Triggers & bumpers */
+.xbox360.controller .trigger,
+.xbox360.controller .bumper {
+  background: #2a2a2a;
+  border: 2px solid #8a2be2;
+  border-radius: 6px;
+  transition: background 120ms, transform 120ms;
+}
+.xbox360.controller .trigger.pressed,
+.xbox360.controller .bumper.pressed {
+  background: #8a2be2;
+}
+
+/* Back / Start */
+.xbox360.controller .back,
+.xbox360.controller .start {
+  background: #2a2a2a;
+  border: 2px solid #8a2be2;
+  border-radius: 6px;
+  color: #8a2be2;
+  font: 600 12px "Segoe UI", sans-serif;
+  padding: 2px 6px;
+}
+.xbox360.controller .back.pressed,
+.xbox360.controller .start.pressed {
+  background: #8a2be2;
+  color: white;
+}
+
+/* Player indicator */
+.xbox360.controller .quadrant {
+  position: absolute;
+  top: 18px;
+  left: 0; right: 0;
+  text-align: center;
+  font: 600 14px "Segoe UI", sans-serif;
+  color: #8a2be2;
+}
